@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b7965b32-6055-487b-91d2-ac9bfacb5a63</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Truck_simulator.py</StartupFile>
+    <StartupFile>TruckSimulator_MainScript.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Truck simulator</Name>
     <RootNamespace>Truck simulator</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Truck_simulator.py" />
+    <Compile Include="Classes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Functions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TruckSimulator_MainScript.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.7" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
